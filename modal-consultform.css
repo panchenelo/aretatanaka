@@ -1,0 +1,186 @@
+#ouibounce-modal {
+  font-family: 'Open Sans', sans-serif;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+#ouibounce-modal .underlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  cursor: pointer;
+  -webkit-animation: fadein 0.5s;
+  animation: fadein 0.5s;
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.over-window{
+	font-family:'Roboto', serif;
+	/*height:629px;*/width:650px;
+	z-index:9999;
+	padding:10px 0 0;
+	cursor:default;
+	background: #FFF none repeat scroll 0% 0%;
+	position:fixed;
+	top:5%;
+	left:60%;
+	margin:0 0 0 -391px;
+	border:3px solid #3e3e3e;
+}
+
+
+
+/*.ex-logo{width:426px;height:55px;margin:40px auto 0;background:url(../img/exitsprite2.png) 0 0 no-repeat;} */
+.ex-logo{
+    color: #111111;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 28px;
+	line-height: 38px;
+	/*width:426px;
+	height:55px;*/
+	margin:15px auto 10px;
+	padding: 0px 15px;
+	text-align:center;
+	font-weight: bold !important;
+	}
+.footer-button{
+    color: #AE1210;
+    font-family: "Roboto Condensed",Georgia,"Century Schoolbook L",serif;
+    font-size: 46px;
+    line-height: 56px;
+	/*width:426px;
+	height:55px;*/
+	margin:5px auto 0px;
+	padding: 0px 15px;
+	text-align:center;
+	}	
+/*.footer-button a{
+	background: #7D3B7C no-repeat scroll 445px center;
+	color: #FFF !important;
+	padding: 9px 22px;
+	text-indent: 27px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 32px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	font-weight: normal;
+	line-height: 2.3em;
+}*/
+
+.footer-button a{
+	font-family: Arial;
+    cursor: pointer;
+    /*padding: 0 42px;*/
+    border: none;
+    display: block;
+    margin: 5px auto 10px;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    height: 51px;
+    line-height: 51px;
+    background: #e74c3c;
+    font-weight: normal;
+    border-bottom: 2px solid #c0392b;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 9px;
+    width: 380px;
+}
+
+.footer-button a:hover {
+    background: #e75c4e;
+}
+
+.footer-button a:hover{
+	color: #FFF;
+}
+
+.ppubtxt {
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: center !important;
+	font-size: 18px;
+	margin-bottom: 10px;
+	width: 650px;
+	padding: 0;
+	color: #111;
+	margin-top: 0;
+}
+.exitprod-img{
+	width:230px;
+	/*height:529px;*/
+	margin:15px 15px 0 15px;
+	float:left;
+	text-align: center;
+}
+.exit-form{width:370px;float:left;}
+.exit-form-text{margin:10px 0 20px;}
+.exit-form-text .subhead{
+	font-size:20px;
+	font-weight:700;
+	line-height:29px;
+	/*color:#333;*/
+	color:#782B2B;
+	/*margin-top:-35px;*/
+}
+.exit-form-text .subhead ul {
+	list-style: outside none none;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: normal;
+	padding-left: 10px;
+}
+.exit-form-text .subhead ul li {
+	background: transparent url("../images/bul.png") no-repeat scroll 0px 10px;
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.close-ex{height:52px;width:52px;cursor:pointer;position:absolute;top:10px;right:-26px;background:url(../images/close.png) no-repeat;}
+.clr{clear:both;}
+
+@media (max-width:654px) {
+#ouibounce-modal .underlay{
+    display: none;
+}
+.over-window{
+    display: none;
+}
+}
