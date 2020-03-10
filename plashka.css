@@ -1,0 +1,91 @@
+.ftrsale {
+	display: block;
+	width: 100%;
+	background: url("../images/blck.png")/*tpa=http://rus.clinicalcheck.com/197/today/assets_files/blck.png*/;
+	color: #ffffff;
+	box-shadow: 11.4px -23.4px 8.5px 1.5px rgba(38, 38, 38, 0.17);
+	-webkit-box-shadow: 11.4px -23.4px 8.5px 1.5px rgba(38, 38, 38, 0.17);
+	-moz-box-shadow: 11.4px -23.4px 8.5px 1.5px rgba(38, 38, 38, 0.17);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+.ftrsale .mainfoot {
+	max-width: 960px;
+    width: 100%;
+	margin: 0 auto;
+}
+.mainfoot .lft{
+	width: 60%;
+	float: left;
+}
+.mainfoot .rght{
+	width: 40%;
+	float: right;
+	margin: 10px 0;
+	text-align: center;
+}
+.mainfoot p {
+	text-align: center;
+	margin:10px;
+    line-height: 25px;
+    font-family: fantasy;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.mainfoot p span{
+	font-size: 25px;
+    color: #ff6600;
+}
+.mainfoot .cls{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    background: url("../images/close.png")/*tpa=http://rus.clinicalcheck.com/197/today/assets_files/closew.png*/ no-repeat;
+}
+.ftr-bttn {
+	display: inline-block;
+    outline: none;
+    border: 2px solid #ffb452;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 #ff6600;
+    background-color: #d4d4d4;
+    border-radius: 25px;
+    color: #ff6600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: fantasy;
+    cursor: pointer;
+	padding: 10px 25px;
+}
+.ftr-bttn:hover {background-color: #bddabe}
+
+.ftr-bttn:active {
+  background-color: #bddabe;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+@media (max-width:768px) {
+.mainfoot .lft{
+	width: 100%;
+	float: none;
+}
+.mainfoot .rght{
+	width: 100%;
+	float: none;
+	text-align: center;
+}
+.mainfoot p {
+    line-height: 22px;
+    font-size: 18px;
+}
+.mainfoot .rght .ftr-bttn {
+    font-size: 18px;
+    padding: 10px 10px;
+}
+}
